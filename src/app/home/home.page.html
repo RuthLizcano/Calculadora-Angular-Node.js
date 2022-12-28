@@ -1,0 +1,149 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title id="titulo">
+      Calculadora
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-grid>
+    <ion-row>
+      <ion-col >
+        <div class="pantalla">{{display}}
+        </div>
+
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col (click)="numero(7)">
+        <p>
+          7
+        </p>
+      </ion-col>
+      
+      <ion-col (click)="numero(8)">
+        <p>
+          8
+        </p>
+      </ion-col>
+      <ion-col (click)="numero(9)">
+        <p>
+          9
+        </p>
+      </ion-col>
+      <ion-col (click)="limpiar()">
+        <p id="h">
+         AC
+        </p>
+      </ion-col>
+
+    </ion-row>
+    
+    
+    <ion-row>
+      <ion-col (click)="numero(4)">
+        <p>
+          4
+        </p>
+      </ion-col>
+      
+      <ion-col (click)="numero(5)">
+        <p>
+          5
+        </p>
+      </ion-col>
+      <ion-col (click)="numero(6)">
+        <p>
+          6
+        </p>
+      </ion-col>
+      <ion-col (click)="operacion('-')">
+        <p id="n" >
+          -
+        </p>
+      </ion-col>
+
+    </ion-row>
+
+    
+
+    <ion-row>
+      <ion-col (click)="numero(1)">
+        <p>
+          1
+        </p>
+      </ion-col>
+      
+      <ion-col (click)="numero(2)">
+        <p>
+          2
+        </p>
+      </ion-col>
+      <ion-col (click)="numero(3)">
+        <p>
+          3
+        </p>
+      </ion-col>
+      <ion-col (click)="operacion('+')">
+        <p id="n">
+          +
+        </p>
+      </ion-col>
+
+    </ion-row>
+    
+    <ion-row>
+      <ion-col (click)="operacion('/')">
+        <p id="n"> 
+          ÷
+        </p>
+      </ion-col>
+      
+      <ion-col (click)="numero(0)">
+        <p>
+          0
+        </p>
+      </ion-col>
+      <ion-col (click)="operacion('*')">
+        <p id="n">
+          X
+        </p>
+      </ion-col>
+      <ion-col (click)="operacion('^')">
+        <p id="n">
+          ^
+        </p>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+      <ion-col (click)="operacion('sin')">
+        <p id="n"> 
+          Sin
+        </p>
+      </ion-col>
+      
+      <ion-col (click)="operacion('cos')">
+        <p id="n">
+          Cos
+        </p>
+      </ion-col>
+      <ion-col (click)="operacion('tan')">
+        <p id="n">
+          Tan
+        </p>
+      </ion-col>
+      <ion-col (click)="igual()">
+        <p id="n">
+          =
+        </p>
+      </ion-col>
+
+    </ion-row>
+
+
+  </ion-grid>
+ 
+</ion-content>
